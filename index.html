@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tic Tac Toe - Ekzi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-scifi.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+  <div class="menu">
+    <h1>Tic Tac Toe</h1>
+    <p>Pilih Mode Permainan:</p>
+    <button onclick="startGame('friend')">Bermain Bersama Teman</button>
+    <button onclick="startGame('easy')">Easy</button>
+    <button onclick="startGame('medium')">Medium</button>
+    <button onclick="startGame('hard')">Hard</button>
+    <button onclick="startGame('invisible')">Invisible Mode</button>
+  </div>
+
+  <div class="game" id="game" style="display:none;">
+    <div id="board" class="board"></div>
+    <p id="status"></p>
+    <button onclick="restartGame()">Restart Manual</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
